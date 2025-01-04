@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+           
+            @media (max-width : 375px) {
+               
+              .test1{
+               
+                display: flex;
+                flex-direction: column;
+                
+              }  
+              .test2{
+                
+                align-self: center;
+                width: 330px ;
+                text-align: center;
+              }
+              .header{
+                font-size: 30px;
+              }
+              .test3{
+                font-size: 50px;
+              }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-500   h-[600px] flex justify-center items-center">
+
+        <div class="test1 w-[1500px]  flex justify-around ">
+            <div class="test2 text-wrap w-[430px]   " >
+                <h1 class="header text-[50px] ">
+                    Welcome to My 
+                <span class="test3 font-medium text-7xl text-slate-950">simple Quiz !</span>
+                </h1>
+                <p class="leading-[100px] text-lg text-gray-800">
+                    pick a subject to get started
+                </p>
+            </div>
+            <div class=" self-center flex flex-col gap-3 text-2xl text-slate-950 font-bold ">
+                <button  class=" bg-gray-600 h-[60px] w-[320px] rounded flex items-center justify-center p-9 ">
+                    <i class="fa-solid fa-music text-gray-500 -translate-x-20 bg-gray-300 text-[40px] p-2 rounded "></i>
+                    <span>Music</span>
+                </button>
+                <button class="bg-gray-600 h-[60px] w-[320px] rounded flex items-center justify-center p-9">
+                    <i class="fa-sharp fa-regular fa-heart  text-gray-500 -translate-x-10 bg-gray-300 text-[40px] p-2 rounded"></i>
+                    <span>Relationships</span>
+                </button>
+                <button class="bg-gray-600 h-[60px] w-[320px] rounded flex items-center justify-center p-9">
+                    <i class="fa-sharp fa-solid fa-blog  text-gray-500 -translate-x-16 bg-gray-300 text-[40px] p-2 rounded"></i>
+                    <span>Personal</span>
+                </button>
+                <button class="bg-gray-600 h-[60px] w-[320px] rounded flex items-center justify-center p-9">
+                    <i class="fa-solid fa-shuffle  text-gray-500 -translate-x-16 bg-gray-300 text-[40px] p-2 rounded"></i>
+                    <span>Random</span>
+                </button>
+            </div>
+        </div>
+
+       
+        <script src="./index.js"></script>
+    </body>
+</html>
